@@ -1,0 +1,91 @@
+/* ******************** Custom Properties Section ******************** */
+
+/* ***** Root Selector ***** */
+:root {
+  /* Grayscale */
+  --white-color: #fff;
+  --gray-light-color: #d0d0d0;
+  --gray-dark-color: #666;
+  --black-color: #000;
+}
+
+/* ***** Formatting styles ***** */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ***** Body styles ***** */
+body {
+  background: var(--black-color);
+  margin: 0px;
+  font-family: Helvetica;
+}
+
+/* Container styles */
+.container {
+  width: 80%;
+  height: 2520px;
+  margin: auto;
+  background-color: var(--gray-light-color);
+}
+
+/* Header styles */
+header {
+  background: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+
+/* ***** Main section styles ***** */
+
+/* Apply styles to the post class */
+.post {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+/* Apply styles to the section tag */
+section {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border-radius: 3px;
+  background: var(--white-color);
+}
+
+/* Apply styles to the post-header class */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+/* Apply style to the first child of the post-header class */
+.post-header > :first-child {
+  width: 80%;
+}
+
+/* Apply style to the last child of the post-header class */
+.post-header > :last-child {
+  width: 20%;
+  text-align: right;
+  color: var(--gray-dark-color);
+}
+
+/* Apply styles to image */
+img {
+  height: 400px;
+  width: 600px;
+}
+
+/* Apply styles to the paragraph */
+p {
+  padding: 0px 20px 20px;
+}
